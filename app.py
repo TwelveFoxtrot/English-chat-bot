@@ -3,8 +3,9 @@ from openai import OpenAI
 from streamlit_chat import message
 
 st.set_page_config(page_title="English Chat Bot")
-
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+# Dosent work for iframe
+#client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.title("💬 Chat with an English Tutor")
 
