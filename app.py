@@ -1,6 +1,8 @@
+import os
 import streamlit as st
 from openai import OpenAI
 from streamlit_chat import message
+
 
 st.set_page_config(page_title="English Chat Bot")
 # Dosent work for iframe
